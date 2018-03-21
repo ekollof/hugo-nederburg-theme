@@ -2,7 +2,7 @@
 	<h1>Tag: {{ .Title }}</h1>
 </div>
 
-<h1 class="screen-reader-text">Posts</h1>
+<h1 class="screen-reader-text">Berichten</h1>
 <div id="loop-container" class="loop-container">
   {{ range $index, $element := (where .Data.Pages "Section" "post") }}
 	{{ if and (isset .Params "image") .Params.image }}
@@ -53,7 +53,7 @@
 								<article>
 									{{ .Summary }}
 
-									<div class="more-link-wrapper"><a class="more-link" href="{{ .Permalink }}">Read the post<span class="screen-reader-text">This is a Standard Post</span></a></div>
+									<div class="more-link-wrapper"><a class="more-link" href="{{ .Permalink }}">Lees verder<span class="screen-reader-text">Dit is een standaardbericht</span></a></div>
 								</article>
 							</div>
 						</div>
